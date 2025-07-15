@@ -10,7 +10,7 @@ class Calculator:
 
 
 # Código Bom
-class Calculator:
+class Calculator2:
     """Classe para realizar operações matemáticas básicas."""
 
     def add(self, a, b):
