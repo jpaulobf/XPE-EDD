@@ -139,6 +139,12 @@ curl -X POST -H "Content-Type: application/json" \
     --data @connectors/source/connect_jdbc_postgres.config localhost:8083/connectors
 ```
 
+Ou no Windows:
+
+```bash
+curl.exe -X POST -H "Content-Type: application/json" -d @connectors/source/connect_jdbc_postgres.config http://localhost:8083/connectors
+```
+
 ```bash
 docker exec -it broker bash
 
@@ -189,6 +195,12 @@ Para subir o sink, usamos o seguinte comando:
 ```bash
 curl -X POST -H "Content-Type: application/json" \
     --data @connectors/sink/connect_s3_sink.config localhost:8083/connectors
+```
+
+Ou no Windows:
+
+```bash
+curl.exe -X POST -H "Content-Type: application/json" -d @connectors/sink/connect_s3_sink.config http://localhost:8083/connectors
 ```
 
 Este sink vai pegar todos os eventos no tópico `postgres-customers` e escrever no S3.
