@@ -26,7 +26,7 @@ Pré-requisitos:
 
     Associar o IGW com a Route Table
 
-## 6 - Criar o Cluster MVK na rede estabelecida
+## 6 - Criar o Cluster MSK na rede estabelecida
 
     Selecionar "unauthorized access allowed"
     Selecionar "plain text encryption"
@@ -200,6 +200,7 @@ curl -X POST http://[IP]:8082/consumers/meu-grupo/instances/meu-consumidor/subsc
 curl -X GET http://[IP]:8082/consumers/meu-grupo/instances/meu-consumidor/records \
   -H "Accept: application/vnd.kafka.json.v2+json"
 ```
+
 
 
 
