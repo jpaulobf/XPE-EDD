@@ -172,4 +172,3 @@ services:
 
 networks:
   proxynet:
-    name: custom_network

@@ -2,8 +2,7 @@ import subprocess
 import sys
 
 # Instala as dependências
-subprocess.check_call([sys.executable, "-m", "pip", "install", 
-                       "--break-system-packages", "-r", 
+subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", 
                        "./simulations/requirements.txt"])
 
 
