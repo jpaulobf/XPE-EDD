@@ -157,6 +157,14 @@ kafka-topics --bootstrap-server localhost:9092 \
 --topic postgres-customers
 ```
 
+ou
+
+```bash
+docker exec -it broker \
+    kafka-console-consumer --bootstrap-server localhost:9092 \
+    --topic postgres-customers \
+    --from-beginning
+```
 
 Este comando cria um conector que irá puxar todo o conteúdo da tabela mais todos os novos dados que forem inseridos. **Atenção**: O Kafka connect não puxa, por default, alterações feitas em registros já existentes. Puxa apenas novos registros. Para verificar se nossa configuração foi criada corretamente e o conector está ok, vamos exibir os logs.
 
@@ -409,3 +417,4 @@ kqsl> show connectors;
 ---
 
 **Parabéns**!! Você acabou de concluir o seu pipeline de processamento de dados em tempo real usando a plataforma Confluent no docker-compose!
+
