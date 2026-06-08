@@ -46,11 +46,11 @@ Pré-requisitos:
 ```bash
 sudo yum install java-17-amazon-corretto -y
 
-wget https://archive.apache.org/dist/kafka/3.8.0/kafka_2.12-3.8.0.tgz
+wget https://archive.apache.org/dist/kafka/3.8.0/kafka_2.12-3.9.0.tgz
 
-tar -xvf kafka_2.12-3.8.0.tgz
+tar -xvf kafka_2.12-3.9.0.tgz
 
-cd kafka_2.12-3.8.0
+cd kafka_2.12-3.9.0
 ```
 
 ## 10 - Criar o tópico
