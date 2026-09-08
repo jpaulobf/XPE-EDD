@@ -6,3 +6,7 @@ Siga os READMEs em cada uma das pastas dos exercícios:
 
 - Atividade Modular
     - Exercício 1 - Pasta `Flink-Kafka`
+
+
+
+
